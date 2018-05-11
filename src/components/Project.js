@@ -70,14 +70,13 @@ const getProjectActions = (props: { url?: string, urlDisplayed?: string, github?
       </a>
     )
   }
-  console.log(actions)
   return actions
 }
 
 const WrapInLink = (props: { url?: string, render: () => React.Node }) => {
   if (props.url) {
     return (
-      <a href={props.url} target="_blank" rel="noopener noreferrer">
+      <a href={props.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
         {props.render()}
       </a>
     )

@@ -1,14 +1,8 @@
 // @flow
 import * as React from 'react'
-import { Card, Col, Row } from 'antd'
-import Project from "../components/Project"
-import TeamMember from "../components/TeamMember"
-import Obfuscate from 'react-obfuscate'
 import { ProjectList } from "../components/ProjectList"
 import { Team } from "../components/Team"
 import { Contact } from "../components/Contact"
-
-const { Meta } = Card
 
 const Homepage = () => {
   return (
