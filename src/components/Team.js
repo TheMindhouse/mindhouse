@@ -17,8 +17,8 @@ class Team extends React.PureComponent<Props> {
       <section>
         <h2 className="section-title">Team</h2>
         <p className="section-description">
-          We connect our passion of bringing the best ideas to life
-          with a mindful, nomadic & joyful way of living.
+          We combine our passion for bringing the best ideas to life
+          with a mindful, nomadic and joyful way of living.
         </p>
         <Row gutter={30} type="flex">
           <TeamMember
