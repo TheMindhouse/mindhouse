@@ -74,22 +74,38 @@ const getProjectActions = (props: { url?: string, urlDisplayed?: string, github?
   return actions
 }
 
+const WrapInLink = (props: { url?: string, render: () => React.Node }) => {
+  if (props.url) {
+    return (
+      <a href={props.url} target="_blank" rel="noopener noreferrer">
+        {props.render()}
+      </a>
+    )
+  }
+  return props.render()
+}
+
 
 const Project = (props: Props) => {
   return (
     <Col xs={24} sm={24} md={12} className="Project">
-      <Card
-        className="Project__Card"
-        hoverable={props.url}
-        style={{ width: '100%' }}
-        cover={<img alt="example" src={props.image} />}
-        actions={getProjectActions(props)}
-      >
-        <Meta
-          title={<ProjectHeader {...props} />}
-          description={props.description}
-        />
-      </Card>
+      <WrapInLink
+        url={props.url}
+        render={() =>
+          <Card
+            className="Project__Card"
+            hoverable={props.url}
+            style={{ width: '100%' }}
+            cover={<img alt="example" src={props.image} />}
+            actions={getProjectActions(props)}
+          >
+            <Meta
+              title={<ProjectHeader {...props} />}
+              description={props.description}
+            />
+          </Card>
+        }
+      />
     </Col>
   )
 }

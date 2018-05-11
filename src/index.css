@@ -26,13 +26,6 @@ section {
     margin: 60px auto;
 }
 
-.Header__motto {
-    font-size: 20px;
-    color: #777;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
 .logo {
     font-size: 50px;
     font-weight: bold;
@@ -46,6 +39,14 @@ section {
 .section-title {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
+}
+
+.section-description {
+    margin: 0 auto 40px;
+    font-size: 20px;
+    color: #777;
+    max-width: 600px;
     text-align: center;
 }
 

@@ -1,0 +1,17 @@
+.TeamMember {
+    text-align: center;
+}
+
+.TeamMember__photo {
+    border-radius: 100%;
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.TeamMember__name {
+    font-weight: bold;
+}
+
+.TeamMember__description {
+    font-size: 18px;
+}

@@ -38,7 +38,8 @@ class ProjectList extends React.PureComponent<Props> {
           />
           <Project image={CryptoToonsImage}
                    title="Crypto Toons"
-                   description="Entertoonment on the blockchain! Unique collectible characters living in the Ethereum network."
+                   description="Entertoonment on the blockchain! In cooperation with Webcartoon Studio we bring you
+                   unique collectible characters living in the Ethereum network."
                    url="https://cryptotoons.io"
                    urlDisplayed="cryptotoons.io"
                    status={PROJECT_STATUS.IN_PROGRESS}

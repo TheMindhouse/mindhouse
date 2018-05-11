@@ -11,7 +11,7 @@ class Contact extends React.PureComponent<Props> {
     return (
       <section className="text-center" style={{ marginBottom: 100 }}>
         <h2 className="section-title">Contact</h2>
-        <p>
+        <p className="section-description">
           If you have any thoughts, questions or suggestions,<br />
           you are welcome to contact us at <b><Obfuscate email='team@mindhouse.io' /></b>
         </p>

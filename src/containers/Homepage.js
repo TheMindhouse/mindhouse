@@ -16,7 +16,7 @@ const Homepage = () => {
       <header className="Header">
         <h1 className="logo">The Mindhouse</h1>
         <span className="emoji-rocket" />
-        <p className="Header__motto">Bringing ideas to life</p>
+        <p className="section-description">Bringing ideas to life</p>
       </header>
 
       <ProjectList/>
