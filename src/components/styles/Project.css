@@ -1,0 +1,79 @@
+.Project {
+    padding: 20px;
+}
+
+.Project__Card {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Project__Card .ant-card-body {
+    height: 100%;
+}
+
+.Project__Card .ant-card-cover {
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(9 / 16 * 100%);
+    overflow: hidden;
+}
+
+.Project__Card .ant-card-meta-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.Project__Card .ant-card-meta-description {
+    font-size: 15px;
+}
+
+.Project__Card .ant-card-actions {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.Project__Card .ant-card-actions > li {
+    margin: 0;
+}
+
+.Project__Card .ant-card-actions > li > span {
+    width: 100%;
+    height: 100%;
+}
+
+
+.Project__Status {
+    font-size: 13px;
+}
+
+.Project__Status--InProgress {
+    color: #1890ff;
+}
+
+.Project__Status--BetaAvailable {
+    color: #faad14;
+}
+
+.Project__Status--Published {
+    color: #52c41a;
+}
+
+
+.Project__Link {
+    padding: 12px 5px;
+}
+
+.Project__Link--primary {
+    color: #1890ff !important;
+}
+
+.Project__Link:hover span {
+    text-decoration: underline;
+}
+
+.Project__Link .anticon {
+    margin-right: 7px;
+}

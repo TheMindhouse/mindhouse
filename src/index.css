@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fafafa;
+    color: #777;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.Header {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.Header__motto {
+    font-size: 20px;
+    color: #777;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.emoji-rocket::after {
+    content: "\01F680";
+    font-size: 30px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
