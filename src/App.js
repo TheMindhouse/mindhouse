@@ -5,6 +5,7 @@ import ReactGA from 'react-ga'
 const hostname = window && window.location && window.location.hostname
 if (hostname === 'mindhouse.io') {
   ReactGA.initialize('UA-117937544-2')
+  ReactGA.pageview(hostname)
 }
 
 class App extends Component {
