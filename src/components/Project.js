@@ -3,6 +3,7 @@ import * as React from 'react'
 import { Badge, Card, Col, Icon, Row } from 'antd'
 import './styles/Project.css'
 import { PROJECT_STATUS } from "../helpers/constants"
+import ReactGA from 'react-ga'
 
 const { Meta } = Card
 
@@ -76,9 +77,15 @@ const getProjectActions = (props: { url?: string, urlDisplayed?: string, github?
 const WrapInLink = (props: { url?: string, render: () => React.Node }) => {
   if (props.url) {
     return (
-      <a href={props.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+      <ReactGA.OutboundLink
+        eventLabel={props.url}
+        to={props.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: 'none' }}
+      >
         {props.render()}
-      </a>
+      </ReactGA.OutboundLink>
     )
   }
   return props.render()
