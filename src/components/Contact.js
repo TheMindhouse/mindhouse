@@ -15,6 +15,10 @@ class Contact extends React.PureComponent<Props> {
           If you have any thoughts, questions or suggestions,<br />
           you are welcome to contact us at <b><Obfuscate email='team@mindhouse.io' /></b>
         </p>
+        <p className="section-description">
+          <b>We are available for hire.</b><br />
+          Let us know about your project.
+        </p>
       </section>
     )
   }
