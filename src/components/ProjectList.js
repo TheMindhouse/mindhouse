@@ -7,6 +7,7 @@ import CryptoCanvasImage from '../assets/images/projects/cryptocanvas.png'
 import MemospeakImage from '../assets/images/projects/memospeak.png'
 import CryptoToonsImage from '../assets/images/projects/cryptotoons.png'
 import AroundImage from '../assets/images/projects/around.png'
+import IdeeImage from '../assets/images/projects/idee.png'
 import { PROJECT_STATUS } from "../helpers/constants"
 
 type Props = {}
@@ -18,6 +19,15 @@ class ProjectList extends React.PureComponent<Props> {
     return (
       <section>
         <Row gutter={30} type="flex">
+          <Project
+            image={IdeeImage}
+            title="idée"
+            description="Write down your ideas for a new startup, personal goal or the next challenge on the bucket list. Quickly rate them and never forget!"
+            url="https://idee.mindhouse.io"
+            urlDisplayed="idee.mindhouse.io"
+            status={PROJECT_STATUS.BETA_AVAILABLE}
+            github="https://github.com/TheMindhouse/idee-android"
+          />
           <Project
             image={CryptoCanvasImage}
             title="CryptoCanvas"
