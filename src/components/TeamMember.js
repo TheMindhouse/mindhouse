@@ -11,7 +11,7 @@ type Props = {
 
 const TeamMember = (props: Props) => {
   return (
-    <Col xs={24} sm={24} md={8} className="TeamMember">
+    <Col xs={24} sm={24} md={12} lg={6} className="TeamMember">
       <img src={props.photo} className="TeamMember__photo" alt={props.name}/>
       <h3 className="TeamMember__name">{props.name}</h3>
       <p className="TeamMember__description">{props.description}</p>
