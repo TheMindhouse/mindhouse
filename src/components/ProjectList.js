@@ -52,7 +52,7 @@ class ProjectList extends React.PureComponent<Props> {
                    unique collectible characters living in the Ethereum network."
                    url="https://cryptotoons.io"
                    urlDisplayed="cryptotoons.io"
-                   status={PROJECT_STATUS.IN_PROGRESS}
+                   status={PROJECT_STATUS.PUBLISHED}
           />
           <Project image={AroundImage}
                    title="Around"
