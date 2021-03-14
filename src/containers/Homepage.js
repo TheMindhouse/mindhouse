@@ -14,8 +14,8 @@ const Homepage = () => {
       </header>
 
       <ProjectList/>
-      <Team/>
-      <Contact/>
+      {/*<Team/>*/}
+      {/*<Contact/>*/}
     </div>
   )
 }
