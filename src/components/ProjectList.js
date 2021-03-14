@@ -17,7 +17,7 @@ class ProjectList extends React.PureComponent<Props> {
 
   render() {
     return (
-      <section>
+      <section style={{ paddingBottom: 100 }}>
         <Row gutter={30} type="flex">
           <Project
             image={IdeeImage}
